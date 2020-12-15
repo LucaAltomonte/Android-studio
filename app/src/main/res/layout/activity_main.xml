@@ -7,18 +7,18 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/teamATextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="40sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teamBTextView"
+        app:layout_constraintEnd_toStartOf="@+id/teamBTextView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/teamBTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -26,7 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/teamATextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
 
@@ -35,9 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team A"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/teamATextView"
+        app:layout_constraintEnd_toEndOf="@+id/teamATextView"
+        app:layout_constraintStart_toStartOf="@+id/teamATextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"/>
 
@@ -46,9 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Team B"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/teamBTextView"
+        app:layout_constraintEnd_toEndOf="@+id/teamBTextView"
+        app:layout_constraintStart_toStartOf="@+id/teamBTextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
 
@@ -58,8 +58,8 @@
         android:layout_height="wrap_content"
         android:text="+1"
         app:layout_constraintBaseline_toBaselineOf="@+id/addTeamBButton"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/teamATextView"
+        app:layout_constraintStart_toStartOf="@+id/teamATextView" />
 
     <Button
         android:id="@+id/removeTeamAButton"
@@ -76,9 +76,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="+1"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/teamBTextView"
+        app:layout_constraintStart_toStartOf="@+id/teamBTextView"
+        app:layout_constraintTop_toBottomOf="@+id/teamBTextView" />
 
     <Button
         android:id="@+id/removeTeamBButton"
@@ -95,8 +95,8 @@
         android:layout_height="350dp"
         android:background="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="@+id/removeTeamAButton"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/teamBTextView"
+        app:layout_constraintStart_toEndOf="@+id/teamATextView"
         app:layout_constraintTop_toTopOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.060000002" />
 
